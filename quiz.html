@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Filosofía</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('img/fondoPC2.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor para centrar mejor */
+        .quiz-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.192);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .back-button-container {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+
+        .back-button {
+            display: block;
+            padding: 15px 30px;
+            background: #2c3e50;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-align: center;
+            border-radius: 50px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            font-size: 1.1em;
+            min-width: 200px;
+        }
+
+        .back-button:hover {
+            background: #34495e;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('img/fondoTel2.png') no-repeat center center fixed;
+            background-size: cover;
+            }
+            
+            .quiz-container {
+                padding: 20px 15px;
+                margin-top: 10px;
+            }
+            
+            .back-button-container {
+                bottom: 20px;
+            }
+            
+            .back-button {
+                padding: 12px 25px;
+                font-size: 1em;
+                min-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button-container">
+        <button class="back-button" onclick="location.href='index.html'">
+            ← Volver al Inicio
+        </button>
+    </div>
+    <a data-quiz="QJBIXFZ6U" data-type=4 href="https://take.quiz-maker.com/QJBIXFZ6U">Loading...</a><script>(function(i,s,o,g,r,a,m){var ql=document.querySelectorAll('A[data-quiz],DIV[data-quiz]'); if(ql){if(ql.length){for(var k=0;k<ql.length;k++){ql[k].id='quiz-embed-'+k;ql[k].href="javascript:var i=document.getElementById('quiz-embed-"+k+"');try{qz.startQuiz(i)}catch(e){i.start=1;i.style.cursor='wait';i.style.opacity='0.5'};void(0);"}}};i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://take.quiz-maker.com/3012/CDN/quiz-embed-v1.js','qp');</script>
+</body>
+</html>

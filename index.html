@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es la Filosofía? - Material Educativo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5 url('img/fondoPC.png') no-repeat fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.71);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px 0;
+        }
+
+        .summary-box {
+            background: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .quiz-button {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 15px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .quiz-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .branch-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .branch-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: #f5f5f5 url('img/fondoTel.png') no-repeat center center fixed;
+                background-size: cover;
+                position: relative;
+            }
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .branch-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Qué es la Filosofía?</h1>
+        
+        <div class="summary-box">
+            <h2>Resumen General</h2>
+            <p>La filosofía es una actividad de pensamiento que se caracteriza por su actitud <strong>problemática y cuestionadora</strong>. Surgió en la Grecia antigua (siglo VI a.C.) como un amor al saber (<em>philos + sophia</em>), pero no como una posesión de conocimiento, sino como una <strong>búsqueda constante</strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Características Principales</h2>
+            <ul>
+                <li><strong>Actitud problematizadora:</strong> Cuestiona la realidad y las creencias establecidas</li>
+                <li><strong>Universalidad:</strong> Se plantea preguntas fundamentales sobre la existencia humana</li>
+                <li><strong>Rigor argumentativo:</strong> Utiliza la lógica y la razón para fundamentar sus ideas</li>
+                <li><strong>Crítica constante:</strong> Revisa y cuestiona continuamente sus propias conclusiones</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Diferencias con Otros Saberes</h2>
+            
+            <h3>Filosofía vs Ciencia</h3>
+            <ul>
+                <li><strong>Ciencia:</strong> Estudia aspectos particulares usando método científico</li>
+                <li><strong>Filosofía:</strong> Cuestiona fundamentos últimos usando razón y lógica</li>
+            </ul>
+
+            <h3>Filosofía vs Ideología</h3>
+            <ul>
+                <li><strong>Ideología:</strong> Sistema cerrado de ideas, dogmático</li>
+                <li><strong>Filosofía:</strong> Actitud abierta, crítica y revisable</li>
+            </ul>
+
+            <h3>Filosofía vs Sentido Común</h3>
+            <ul>
+                <li><strong>Sentido común:</strong> Saberes prácticos no sistemáticos</li>
+                <li><strong>Filosofía:</strong> Exige fundamentación rigurosa y argumentación</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ramas Principales de la Filosofía</h2>
+            <div class="branch-list">
+                <div class="branch-item">
+                    <h3>📚 Gnoseología</h3>
+                    <p>Teoría del conocimiento. Estudia la posibilidad, origen y límites del conocimiento humano.</p>
+                </div>
+                <div class="branch-item">
+                    <h3>⚖️ Ética</h3>
+                    <p>Reflexiona sobre la moral, los valores y los principios de la conducta humana.</p>
+                </div>
+                <div class="branch-item">
+                    <h3>🔍 Metafísica</h3>
+                    <p>Estudio del ser y la realidad en su sentido más fundamental.</p>
+                </div>
+                <div class="branch-item">
+                    <h3>🎨 Estética</h3>
+                    <p>Naturaleza de la belleza, el arte y la experiencia estética.</p>
+                </div>
+                <div class="branch-item">
+                    <h3>👥 Antropología Filosófica</h3>
+                    <p>Reflexiona sobre la esencia y naturaleza del ser humano.</p>
+                </div>
+                <div class="branch-item">
+                    <h3>🏛️ Filosofía Política</h3>
+                    <p>Organización social, justicia y fundamentos del poder.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Esencia de la Filosofía</h2>
+            <p>La filosofía es, en esencia, un <strong>ejercicio de pensamiento crítico</strong> que invita a reflexionar de manera autónoma, a cuestionar lo establecido y a buscar respuestas a las grandes preguntas humanas sobre la vida, la muerte, el conocimiento y la realidad.</p>
+        </div>
+
+        <button class="quiz-button" onclick="location.href='quiz.html'">
+            📝 Ir al Quiz
+        </button>
+    </div>
+
+    <script>
+        // Pequeña animación para el botón
+        document.querySelector('.quiz-button').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05)';
+        });
+        
+        document.querySelector('.quiz-button').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
